@@ -1,0 +1,780 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:a="http://xmlns.jcp.org/jsf/passthrough"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Byakko System</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+        <meta content="" name="keywords" />
+        <meta content="" name="description" />
+        <link rel="stylesheet" href="../sweetalert/dist/sweetalert2.min.css"/>
+
+        <!-- Favicon -->
+        <link href="img/favicon.ico" rel="icon" />
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com"/>
+        <!-- Icon Font Stylesheet -->
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+            rel="stylesheet"
+            />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+            rel="stylesheet"
+            />
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/animate/animate.min.css" rel="stylesheet" />
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet"/>
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet"/>
+    </h:head>
+    <h:body>
+        <header class="hero">
+            <div class="container-xxl bg-white p-0">
+                <!-- Spinner Start -->
+                <div
+                    id="spinner"
+                    class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
+                    >
+                    <div
+                        class="spinner-border text-primary"
+                        style="width: 3rem; height: 3rem"
+                        role="status"
+                        >
+                        <span class="sr-only">Cargando...</span>
+                    </div>
+                </div>
+                <!-- Spinner End -->
+
+                <!-- Navbar & Hero Start -->
+                <div class="container-xxl position-relative p-0">
+                    <nav
+                        class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0"
+                        >
+                        <a href="index.html" class="navbar-brand p-0">
+                            <h1 class="m-0">Byakko System</h1>
+                        </a>
+                        <button
+                            class="navbar-toggler"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#navbarCollapse"
+                            >
+                            <span class="fa fa-bars"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarCollapse">
+                            <div class="navbar-nav ms-auto py-0">
+                                <a href="index.html" class="nav-item nav-link active">Inicio</a>
+                                <a href="#ventas" class="nav-item nav-link">Ventas</a>
+                                <a href="#Inventario" class="nav-item nav-link">Inventario</a>
+                                <a href="#Proveedores" class="nav-item nav-link">Proveedores</a>
+                                <div class="nav-item dropdown">
+                                    <a
+                                        href="#"
+                                        class="nav-link dropdown-toggle"
+                                        data-bs-toggle="dropdown"
+                                        >Paginas</a
+                                    >
+                                    <div class="dropdown-menu m-0">
+                                        <a href="400.html" class="dropdown-item">Error 400</a>
+                                        <a href="quote.html" class="dropdown-item">Error 403</a>
+                                        <a href="404.html" class="dropdown-item">Error 404</a>
+                                        <a href="404.html" class="dropdown-item">Error 505</a>
+                                    </div>
+                                </div>
+                                <div class="nav-item dropdown">
+                                    <a
+                                        href="#"
+                                        class="nav-link dropdown-toggle"
+                                        data-bs-toggle="dropdown"
+                                        >Documentos</a
+                                    >
+                                    <div class="dropdown-menu m-0">
+                                        <a href="feature.html" class="dropdown-item">Formulacion del proyecto</a>
+                                        <a href="quote.html" class="dropdown-item">IEE830</a>
+                                        <a href="team.html" class="dropdown-item">DEA</a>
+                                        <a href="404.html" class="dropdown-item">gg</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <a
+                                href="../Dashboard/docs/page-login.html"
+                                class="btn btn-light rounded-pill text-primary py-2 px-4 ms-lg-5"
+                                >Iniciar sesion</a
+                            >
+                        </div>
+                    </nav>
+
+                    <div class="container-xxl bg- hero-header gradient_bg ">
+                        <div class="container">
+                            <div class="row g-5 align-items-center">
+                                <div class="col-lg-6 text-center text-lg-start">
+                                    <h1 class=" texto  mb-4 animated zoomIn text-center">
+                                        Automatizamos los procesos de su negocio.
+                                    </h1>
+                                    <a href="#" class="hero__cta">Join us!</a>
+
+
+                                </div>
+
+                                <div class="col-lg-6 text-center text-lg-start">
+                                    <img
+                                        class="img-fluid animated zoomIn col-sm-8 col-md-8 col-lg-12"
+                                        src="img/logo.png" width="500px left-50"
+                                        alt=""/>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="modal ">
+            <div class="modal__container">
+                <h:graphicImage  value="img/Logro.png" class="modal__img"/>
+                <h2 class="modal__title">¡Bienvenido al sitio!</h2>
+                <p class="modal__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti nobis nisi quibusdam doloremque expedita quae ipsam accusamus quisquam quas, culpa tempora. Veniam consectetur deleniti maxime.</p>
+                <a href="#" class="modal__close">Cerrar</a>
+            </div>
+        </section>
+        <!-- Navbar & Hero End -->
+
+        <!-- About Start -->
+        <div class="container-xxl py-6">
+            <div class="container">
+                <div class="row g-5">                                                    
+                    <h:graphicImage class="img-fluid" value="img/Startup_Flatline.png"/>
+
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div
+                            class="d-inline-block border rounded-pill text-info px-4 mb-3"
+                            >
+                            Sobre nosotros
+                        </div>
+                        <h2 class="mb-4 text-center">
+                            Somos una empresa que ofrece excelentes productos.
+                        </h2>
+                        <div class="row g-3 mb-4">
+                            <div class="col-12 d-flex">
+                                <div
+                                    class="flex-shrink-0 btn-lg-square rounded-circle bg-info"
+                                    >
+                                    <i class="fa fa-user-tie text-white"></i>
+                                </div>
+                                <div class="ms-4">
+                                    <h6>Mision</h6>
+                                    <span
+                                        >La misión de la cigarrería Andrus, es la distribución 
+                                        de productos con excelencia en precio,calidad y variedad 
+                                        para clientes que compran ofreciendoles ventajas y oportunidades 
+                                        para satisfarcer sus necesidades.</span
+                                    >
+                                </div>
+                            </div>
+                            <div class="col-12 d-flex">
+                                <div
+                                    class="flex-shrink-0 btn-lg-square rounded-circle bg-info"
+                                    >
+                                    <i class="fa fa-chart-line text-white"></i>
+                                </div>
+                                <div class="ms-4">
+                                    <h6>Vision</h6>
+                                    <span
+                                        >La vision de la empresa Andrus se puede resumir en los siguientes aspectos: 
+                                        <li>Ofrecer un excelente servicio a nustros clientes.</li>
+                                        <li>Calidad de los productos.</li>
+                                        <li>Excelentes promociones</li></span
+                                    >
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+
+        <!-- Newsletter Start -->
+        <div
+            class="colorf container-xxl  my-6 wow fadeInUp"
+            data-wow-delay="0.1s"
+            >
+            <div class="container px-lg-5">
+                <div class="row align-items-center" style="height: 250px">
+                    <div class=" col-12 col-md-6  align-items-center text-center ">
+                        <h3 class="text-black">Nuestro sistema de informacion tiene los siguientes modulos</h3>
+                        <div class="position-relative w-100 mt-3">
+                        </div>
+                    </div>
+                    <div class="col-md-6 text-center mb-n5 d-none d-md-block">
+                        <img
+                            class="img-fluid mt-5"
+                            style="max-height: 300px"
+                            src="img/Modulos.png"
+                            />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Newsletter End -->
+
+        <!-- Service Start -->
+        <section id="ventas">
+            <div class="container-xxl py-6">
+                <div class="container">
+                    <div
+                        class="mx-auto text-center wow fadeInUp"
+                        data-wow-delay="0.1s"
+                        style="max-width: 600px"
+                        >
+                        <h2 class="mb-5">Gestion de ventas:</h2>
+                    </div>
+                    <div class="row g-4">
+                        <div class="col-lg-4 col-md-6 wow fadeInUp  text-center align-items-center" data-wow-delay="0.1s">
+                            <div class="service-item rounded h-100">
+                                <div class="d-flex justify-content-between">
+                                    <div class="service-icon">
+                                        <i class="fa fa-user-tie fa-2x"></i>
+                                    </div>
+                                </div>
+                                <div class="p-5">
+                                    <h5 class="mb-3">Seleccionar productos</h5>
+                                    <span
+                                        >El registro de productos estara guardado en la base de datos de inventario
+                                        y seran llamados cuando el vendedor filtre el producto y se agregaran a la tabla.
+                                    </span
+                                    >0.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 wow fadeInUp  text-center align-items-center" data-wow-delay="0.3s">
+                            <div class="service-item rounded h-100">
+                                <div class="d-flex justify-content-between">
+                                    <div class="service-icon">
+                                        <i class="fa fa-chart-pie fa-2x"></i>
+                                    </div>
+
+                                </div>
+                                <div class="p-5">
+                                    <h5 class="mb-3">Registrar venta</h5>
+                                    <span
+                                        >Al terminar de agregar los productos que el cliente desea comprar,
+                                        el vendedor dara click en el boton de guardar.</span
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 wow fadeInUp  text-center align-items-center" data-wow-delay="0.6s">
+                            <div class="service-item rounded h-100">
+                                <div class="d-flex justify-content-between">
+                                    <div class="service-icon">
+                                        <i class="fa fa-chart-line fa-2x"></i>
+                                    </div>
+
+                                </div>
+                                <div class="p-5">
+                                    <h5 class="mb-3">Envio de orden de compra</h5>
+                                    <span
+                                        >El vendedor dara click en el boton de enviar y se desplegara el formulario de envio de orden de compra.</span
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 wow fadeInUp  text-center align-items-center" data-wow-delay="0.1s">
+                            <div class="service-item rounded h-100">
+                                <div class="d-flex justify-content-between">
+                                    <div class="service-icon">
+                                        <i class="fa fa-chart-area fa-2x"></i>
+                                    </div>
+
+                                </div>
+                                <div class="p-5">
+                                    <h5 class="mb-3">Consultar ventas</h5>
+                                    <span
+                                        >Para la consulta se tiene la opcion de filtrar por fecha de registro </span
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 wow fadeInUp  text-center align-items-center" data-wow-delay="0.3s">
+                            <div class="service-item rounded h-100">
+                                <div class="d-flex justify-content-between">
+                                    <div class="service-icon">
+                                        <i class="fa fa-balance-scale fa-2x"></i>
+                                    </div>
+
+                                </div>
+                                <div class="p-5">
+                                    <h5 class="mb-3">Inhabilitar ventas</h5>
+                                    <span
+                                        >Inhabilitar registro de ventas,para optimizar los procesos de busqueda. Cuando no sea requerido un registro se inhabilitara.</span
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 wow fadeInUp  text-center align-items-center" data-wow-delay="0.6s">
+                            <div class="service-item rounded h-100">
+                                <div class="d-flex justify-content-between">
+                                    <div class="service-icon">
+                                        <i class="fa fa-house-damage fa-2x"></i>
+                                    </div>
+
+                                </div>
+                                <div class="p-5">
+                                    <h5 class="mb-3"></h5>
+                                    <span
+                                        >Erat ipsum justo amet duo et elitr dolor, est duo duo eos
+                                        lorem sed diam stet diam sed stet lorem.</span
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Service End -->
+
+        <!-- Features Start -->
+        <section id="Inventario">
+            <div class="container-xxl py-6">
+                <div class="container">
+                    <div class="row g-5">
+                        <div class="col-lg-5 wow fadeInUp" data-wow-delay="0.1s">
+
+                            <h2 class="mb-4 text-center">
+                                Administrar inventario:
+                            </h2>
+                            <p >
+                                Tener un registro adecuado de los productos, los cuales estaran
+                                a disposicion del bodeguero y del administrador,para asi obtener una buena
+                                organizacion de la informacion.
+
+                            </p>
+                            <p>Permitiendo satisfacer
+                                correctamente las necesidades de la empresa, Por lo tanto
+                                la gestión de inventarios debe estar constantemente controlada,gestionada
+                                y actualizada.
+                            </p>
+
+                        </div>
+                        <div class="col-lg-7">
+                            <div class="row g-5">
+                                <div class="col-sm-6 wow fadeIn" data-wow-delay="0.1s">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <div
+                                            class="flex-shrink-0 btn-square bg-primary rounded-circle me-3"
+                                            >
+                                            <i class="fa fa-cubes text-white"></i>
+                                        </div>
+                                        <h6 class="mb-0">Registrar  entrada producto</h6>
+                                    </div>
+                                    <span
+                                        >En este campo es registrada la entrada de cada producto y quedara almacenada en una tabla de registro. </span
+                                    >
+                                </div>
+                                <div class="col-sm-6 wow fadeIn" data-wow-delay="0.2s">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <div
+                                            class="flex-shrink-0 btn-square bg-primary rounded-circle me-3"
+                                            >
+                                            <i class="fa fa-percent text-white"></i>
+                                        </div>
+                                        <h6 class="mb-0">Registrar novedades del producto</h6>
+                                    </div>
+                                    <span
+                                        >En este campo se registrara las novedades de cada producto y quedara almacendada en la tabla de registro.</span
+                                    >
+                                </div>
+                                <div class="col-sm-6 wow fadeIn" data-wow-delay="0.3s">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <div
+                                            class="flex-shrink-0 btn-square bg-primary rounded-circle me-3"
+                                            >
+                                            <i class="fa fa-award text-white"></i>
+                                        </div>
+                                        <h6 class="mb-0">Actualizar </h6>
+                                    </div>
+                                    <span
+                                        > En este campo se ragistrara todas las nuevas actualizaciones de cada producto y quedara almacenada de manera automatica en la tabla de registro.</span
+                                    >
+                                </div>
+                                <div class="col-sm-6 wow fadeIn" data-wow-delay="0.4s">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <div
+                                            class="flex-shrink-0 btn-square bg-primary rounded-circle me-3"
+                                            >
+                                            <i class="fa fa-smile-beam text-white"></i>
+                                        </div>
+                                        <h6 class="mb-0">Inhabilitar</h6>
+                                    </div>
+                                    <span
+                                        > En este campo el administrador inhabilitara los productos que desee.</span
+                                    >
+                                </div>
+                                <div class="col-sm-6 wow fadeIn" data-wow-delay="0.5s">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <div
+                                            class="flex-shrink-0 btn-square bg-primary rounded-circle me-3"
+                                            >
+                                            <i class="fa fa-user-tie text-white"></i>
+                                        </div>
+                                        <h6 class="mb-0">Hoja de vida </h6>
+                                    </div>
+                                    <span
+                                        >En este campo se mostrara el perfil y informacion de cada producto.</span
+                                    >
+                                </div>
+                                <div class="col-sm-6 wow fadeIn" data-wow-delay="0.6s">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <div
+                                            class="flex-shrink-0 btn-square bg-primary rounded-circle me-3"
+                                            >
+                                            <i class="fa fa-headset text-white"></i>
+                                        </div>
+                                        <h6 class="mb-0">consultar productos</h6>
+                                    </div>
+                                    <span
+                                        >En este campo cualquier  actor  podra cconsultar los prodcutos y al ser buscadados apararecera el perfil del producto seleccionado.</span
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--proveedor-->
+        <section id="Proveedores">
+            <div class="container-xxl py-6">
+                <div class="container">
+                    <div
+                        class="mx-auto text-center wow fadeInUp"
+                        data-wow-delay="0.1s"
+                        style="max-width: 600px"
+                        >
+                        <h2 class="mb-5">Organizar Proveedores</h2>
+                    </div>
+                    <div class="row g-4">
+                        <div class="col-lg-4 col-md-6 wow fadeInUp  text-center align-items-center" data-wow-delay="0.1s">
+                            <div class="service-item rounded h-100">
+                                <div class="d-flex justify-content-between">
+                                    <div class="service-icon">
+                                        <i class="fa fa-user-tie fa-2x"></i>
+                                    </div>
+                                </div>
+                                <div class="p-5">
+                                    <h5 class="mb-3">Registrar proveedor</h5>
+                                    <span
+                                        >En este espacio encontraras la seccion de registrar la informacion tu proveedor de confianza</span
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 wow fadeInUp  text-center align-items-center" data-wow-delay="0.3s">
+                            <div class="service-item rounded h-100">
+                                <div class="d-flex justify-content-between">
+                                    <div class="service-icon">
+                                        <i class="fa fa-chart-pie fa-2x"></i>
+                                    </div>
+
+                                </div>
+                                <div class="p-5">
+                                    <h5 class="mb-3">Actualizar proveedor</h5>
+                                    <span
+                                        >En este espacio encontraras la seccion de actualizar la informacion tu proveedor de confianza </span
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 wow fadeInUp  text-center align-items-center" data-wow-delay="0.6s">
+                            <div class="service-item rounded h-100">
+                                <div class="d-flex justify-content-between">
+                                    <div class="service-icon">
+                                        <i class="fa fa-chart-line fa-2x"></i>
+                                    </div>
+
+                                </div>
+                                <div class="p-5">
+                                    <h5 class="mb-3">Consultar proveedor</h5>
+                                    <span
+                                        >En este espacio encontraras la seccion de consultar la informacion tu proveedor de confianza</span
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 wow fadeInUp  text-center align-items-center" data-wow-delay="0.1s">
+                            <div class="service-item rounded h-100">
+                                <div class="d-flex justify-content-between">
+                                    <div class="service-icon">
+                                        <i class="fa fa-chart-area fa-2x"></i>
+                                    </div>
+
+                                </div>
+                                <div class="p-5">
+                                    <h5 class="mb-3">Inhabilitar proveedor</h5>
+                                    <span
+                                        >En este espacio encontraras la seccion de inhabilitar a tu proveedor de confianza</span
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 wow fadeInUp  text-center align-items-center" data-wow-delay="0.3s">
+                            <div class="service-item rounded h-100">
+                                <div class="d-flex justify-content-between">
+                                    <div class="service-icon">
+                                        <i class="fa fa-balance-scale fa-2x"></i>
+                                    </div>
+
+                                </div>
+                                <div class="p-5">
+                                    <h5 class="mb-3">Registrar orden de pedido</h5>
+                                    <span
+                                        >En este espacio encontraras la seccion de registrar la orden de pedido que le hiciste a tu proveedor.</span
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 wow fadeInUp  text-center align-items-center" data-wow-delay="0.6s">
+                            <div class="service-item rounded h-100">
+                                <div class="d-flex justify-content-between">
+                                    <div class="service-icon">
+                                        <i class="fa fa-house-damage fa-2x"></i>
+                                    </div>
+
+                                </div>
+                                <div class="p-5">
+                                    <h5 class="mb-3">Consultar orden de pedido</h5>
+                                    <span
+                                        >En este espacio encontraras la seccion de consultar la orden de pedido que le hiciste a tu proveedor</span
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--End proveedor-->
+
+        <div class="container-xxl py-6 ">
+            <div class="container">
+                <div
+                    class="mx-auto text-center wow fadeInUp"
+                    data-wow-delay="0.1s"
+                    style="max-width: 600px"
+                    >
+                    <div
+                        class="d-inline-block border rounded-pill text-primary px-4 mb-3"
+                        >
+                        Nuestro equipo de trabajo
+                    </div>
+                    <h2 class="mb-5">Conozca a nuestros integrantes de equipo.</h2>
+                </div>
+                <div class="row g-4 justify-content-center align-items-center">
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="team-item">
+                            <h5>Carol Daniela Zamora Orostegui</h5>
+                            <p class="mb-4">Desarrolladora</p>
+                            <img
+                                class="img-fluid rounded-circle w-100 mb-4"
+                                src="img/cz.jpeg"
+                                alt=""
+                                />
+                            <div class="d-flex justify-content-center">
+                                <a class="btn btn-square text-primary bg-white m-1" href=""
+                                   ><i class="fab fa-facebook-f"></i
+                                    ></a>
+                                <a class="btn btn-square text-primary bg-white m-1" href="https://github.com/CarolZamora" target="_blank"
+                                   ><i class="fab fa-github-alt" ></i>
+                                </a>
+                                <a class="btn btn-square text-primary bg-white m-1" href="https://www.linkedin.com/in/carol-zamora-951512181/" target="_blank"
+                                   ><i class="fab fa-linkedin-in"></i
+                                    ></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="team-item">
+                            <h5>James Andres Ruiz Ovalle</h5>
+                            <p class="mb-4">Programador</p>
+                            <img
+                                class="img-fluid rounded-circle w-100 mb-4"
+                                src="img/team-2.jpg"
+                                alt=""
+                                />
+                            <div class="d-flex justify-content-center">
+                                <a class="btn btn-square text-primary bg-white m-1" href=""
+                                   ><i class="fab fa-facebook-f"></i
+                                    ></a>
+                                <a class="btn btn-square text-primary bg-white m-1" href=""
+                                   ><i class="fab fa-github-alt"></i
+                                    ></a>
+                                <a class="btn btn-square text-primary bg-white m-1" href=""
+                                   ><i class="fab fa-linkedin-in"></i
+                                    ></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="team-item">
+                            <h5>Erika Juliana Cuevas Niño</h5>
+                            <p class="mb-4">Analista</p>
+                            <img
+                                class="img-fluid rounded-circle w-100 mb-4"
+                                src="img/team-3.jpg"
+                                alt=""
+                                />
+                            <div class="d-flex justify-content-center">
+                                <a class="btn btn-square text-primary bg-white m-1" href=""
+                                   ><i class="fab fa-facebook-f"></i
+                                    ></a>
+                                <a class="btn btn-square text-primary bg-white m-1" href=""
+                                   ><i class="fab fa-github-alt"></i
+                                    ></a>
+                                <a class="btn btn-square text-primary bg-white m-1" href=""
+                                   ><i class="fab fa-linkedin-in"></i
+                                    ></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Team End -->
+
+        <!-- Footer Start -->
+        <div
+            class="container-fluid bg-dark text-light footer pt-5 wow fadeIn"
+            data-wow-delay="0.1s"
+            style="margin-top: 6rem"
+            >
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-md-6 col-lg-4">
+                        <h5 class="text-white mb-4">Get In Touch</h5>
+                        <p>
+                            <i class="fa fa-map-marker-alt me-3"></i>123 Street, New York,
+                            USA
+                        </p>
+                        <p><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
+                        <p><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                        <div class="d-flex pt-2">
+                            <a class="btn btn-outline-light btn-social" href=""
+                               ><i class="fab fa-twitter"></i
+                                ></a>
+                            <a class="btn btn-outline-light btn-social" href=""
+                               ><i class="fab fa-facebook-f"></i
+                                ></a>
+                            <a class="btn btn-outline-light btn-social" href=""
+                               ><i class="fab fa-youtube"></i
+                                ></a>
+                            <a class="btn btn-outline-light btn-social" href=""
+                               ><i class="fab fa-instagram"></i
+                                ></a>
+                            <a class="btn btn-outline-light btn-social" href=""
+                               ><i class="fab fa-linkedin-in"></i
+                                ></a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <h5 class="text-white mb-4">Popular Link</h5>
+                        <a class="btn btn-link" href="">About Us</a>
+                        <a class="btn btn-link" href="">Contact Us</a>
+                        <a class="btn btn-link" href="">Privacy Policy</a>
+                        <a class="btn btn-link" href="">Terms y Condition</a>
+                        <a class="btn btn-link" href="">Career</a>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <h5 class="text-white mb-4">Newsletter</h5>
+                        <p>
+                            Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi.
+                            Curabitur facilisis ornare velit non vulpu
+                        </p>
+                        <div class="position-relative w-100 mt-3">
+                            <input
+                                class="form-control border-0 rounded-pill w-100 ps-4 pe-5"
+                                type="text"
+                                placeholder="Your Email"
+                                style="height: 48px"
+                                />
+                            <button
+                                type="button"
+                                class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2"
+                                >
+                                <i class="fa fa-paper-plane text-primary fs-4"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="copyright">
+                    <div class="row">
+                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                            &copy; <a class="border-bottom" href="#">Your Site Name</a>, All
+                            Right Reserved.
+
+                            <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                            Designed By
+                            <a class="border-bottom" href="https://htmlcodex.com"
+                               >HTML Codex</a
+                            >
+                            <br />Distributed By:
+                            <a
+                                class="border-bottom"
+                                href="https://themewagon.com"
+                                target="_blank"
+                                >ThemeWagon</a
+                            >
+                        </div>
+                        <div class="col-md-6 text-center text-md-end">
+                            <div class="footer-menu">
+                                <a href="">Home</a>
+                                <a href="">Cookies</a>
+                                <a href="">Help</a>
+                                <a href="">FQAs</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-info btn-lg-square back-to-top"
+           ><i class="bi bi-arrow-up"></i
+            ></a>
+
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+        <!-- Scrip alert -->
+        <script src="../sweetalert/dist/sweetalert2.all.min.js"></script>
+    </h:body>
+</html>
+
